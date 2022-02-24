@@ -51,7 +51,7 @@ def getall_data(request):
         serializer = SnippetSerializer(emp, many=True)
         return Response(serializer.data)
     except:
-        return Response(data="insert proper data")
+        return Response(data="Invalid data")
 
 
 
